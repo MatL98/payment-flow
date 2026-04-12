@@ -1,0 +1,8 @@
+{
+  "eventId": "evt-processing-001",
+  "type": "payment.processing",
+  "paymentId": "REPLACE_PAYMENT_ID",
+  "occurredAt": "2026-04-12T12:00:00.000Z",
+  "providerReference": "prov_demo_001"
+}
+

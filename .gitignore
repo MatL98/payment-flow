@@ -1,0 +1,9 @@
+node_modules/
+.aws-sam/
+dist/
+coverage/
+.DS_Store
+*.log
+env.json
+.vscode
+

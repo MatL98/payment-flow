@@ -1,0 +1,24 @@
+{
+  "name": "payment-flow-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weekend backend project that simulates a payment provider integration with a centralized payment state machine.",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "tsx --test tests/paymentStateMachine.test.ts",
+    "sam:build": "sam build",
+    "sam:start": "sam local start-api",
+    "sam:deploy:guided": "sam deploy --guided"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.901.0",
+    "@aws-sdk/lib-dynamodb": "^3.901.0",
+    "esbuild": "^0.25.9"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.18.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

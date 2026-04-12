@@ -1,0 +1,8 @@
+{
+  "eventId": "evt-approved-001",
+  "type": "payment.approved",
+  "paymentId": "REPLACE_PAYMENT_ID",
+  "occurredAt": "2026-04-12T12:01:00.000Z",
+  "providerReference": "prov_demo_001"
+}
+
