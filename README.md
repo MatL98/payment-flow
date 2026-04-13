@@ -1,6 +1,6 @@
 # payment-flow-simulator
 
-`payment-flow-simulator` is a small interview-quality project with:
+`payment-flow-simulator` is a small project with:
 
 - `backend/`: Node.js + TypeScript + AWS Lambda + API Gateway + DynamoDB + AWS SAM
 - `frontend/`: React + TypeScript + Vite
