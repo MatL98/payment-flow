@@ -1,9 +1,14 @@
 node_modules/
 .aws-sam/
+backend/node_modules/
+backend/.aws-sam/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
 dist/
 coverage/
 .DS_Store
 *.log
 env.json
+backend/env.json
 .vscode
-

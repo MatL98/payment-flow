@@ -1,0 +1,243 @@
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: #14213d;
+  background:
+    radial-gradient(circle at top left, rgba(244, 162, 97, 0.25), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(42, 157, 143, 0.2), transparent 35%),
+    #f7f3eb;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  background: #14213d;
+  color: #fffaf2;
+  cursor: pointer;
+  padding: 0.85rem 1.2rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+input {
+  width: 100%;
+  margin-top: 0.45rem;
+  border: 1px solid rgba(20, 33, 61, 0.12);
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.app-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: #2a9d8f;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 0.95;
+}
+
+.hero-copy {
+  max-width: 46rem;
+  margin-top: 1rem;
+  color: rgba(20, 33, 61, 0.8);
+  font-size: 1.05rem;
+}
+
+.hero-panel,
+.card,
+.message-strip {
+  border: 1px solid rgba(20, 33, 61, 0.08);
+  background: rgba(255, 250, 242, 0.86);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 40px rgba(20, 33, 61, 0.08);
+}
+
+.hero-panel {
+  border-radius: 28px;
+  padding: 1.5rem;
+  display: grid;
+  align-content: center;
+  gap: 0.3rem;
+}
+
+.hero-panel span {
+  color: rgba(20, 33, 61, 0.6);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+}
+
+.hero-panel strong {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 1.4rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-header p {
+  margin: 0.35rem 0 0;
+  color: rgba(20, 33, 61, 0.68);
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgba(20, 33, 61, 0.04);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.detail-item span {
+  color: rgba(20, 33, 61, 0.58);
+  font-size: 0.85rem;
+}
+
+.detail-wide {
+  grid-column: span 2;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.status-created,
+.status-initiated,
+.status-redirect_required {
+  background: rgba(32, 156, 238, 0.12);
+  color: #1d6fa5;
+}
+
+.status-processing {
+  background: rgba(244, 162, 97, 0.18);
+  color: #a85d22;
+}
+
+.status-approved {
+  background: rgba(42, 157, 143, 0.18);
+  color: #1f766b;
+}
+
+.status-failed {
+  background: rgba(196, 69, 54, 0.16);
+  color: #9f3226;
+}
+
+.empty-state {
+  margin-top: 1rem;
+  border-radius: 18px;
+  padding: 1rem;
+  background: rgba(20, 33, 61, 0.04);
+  color: rgba(20, 33, 61, 0.68);
+}
+
+.message-strip {
+  margin-top: 1.25rem;
+  border-radius: 24px;
+  padding: 1.1rem 1.25rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.message-strip span {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: rgba(20, 33, 61, 0.54);
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .layout-grid,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-wide {
+    grid-column: span 1;
+  }
+}

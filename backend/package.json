@@ -1,5 +1,5 @@
 {
-  "name": "payment-flow-simulator",
+  "name": "payment-flow-simulator-backend",
   "version": "1.0.0",
   "private": true,
   "description": "Weekend backend project that simulates a payment provider integration with a centralized payment state machine.",
@@ -7,7 +7,7 @@
     "build": "tsc --noEmit",
     "test": "tsx --test tests/paymentStateMachine.test.ts",
     "sam:build": "sam build",
-    "sam:start": "sam local start-api",
+    "sam:start": "sam local start-api --env-vars env.json",
     "sam:deploy:guided": "sam deploy --guided"
   },
   "dependencies": {

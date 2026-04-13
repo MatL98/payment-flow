@@ -5,7 +5,10 @@ export function json(statusCode: number, body: unknown): APIGatewayProxyStructur
   return {
     statusCode,
     headers: {
-      "content-type": "application/json"
+      "content-type": "application/json",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "Content-Type,Idempotency-Key",
+      "access-control-allow-methods": "GET,POST,OPTIONS"
     },
     body: JSON.stringify(body)
   };
@@ -26,4 +29,3 @@ export function handleError(error: unknown): APIGatewayProxyStructuredResultV2 {
     message: "Unexpected error"
   });
 }
-
