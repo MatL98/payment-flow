@@ -5,7 +5,7 @@
 - `backend/`: Node.js + TypeScript + AWS Lambda + API Gateway + DynamoDB + AWS SAM
 - `frontend/`: React + TypeScript + Vite
 
-The goal is to demo a realistic payment lifecycle with a pure reducer/state machine, asynchronous webhook updates, idempotency, and a tiny UI that makes the flow easy to show in an interview.
+The goal is to demo a realistic payment lifecycle with a pure reducer/state machine, asynchronous webhook updates, idempotency, and a tiny UI that makes the flow easy to show.
 
 ## Project layout
 
